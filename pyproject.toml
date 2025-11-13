@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "transaction-metadata"
+version = "0.1.0"
+description = "A metadata package for transaction and user Avro schemas"
+authors = [{ name = "Manojit Roy", email = "roy.monojit982810@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+keywords = ["metadata", "avro", "schema", "data-engineering"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[tool.setuptools.packages.find]
+where = ["transaction_metadata"]
+
+[tool.setuptools.package-data]
+"transaction_metadata" = ["schemas/**/*.avsc"]

@@ -1,0 +1,18 @@
+{
+  "type": "record",
+  "name": "Transaction",
+  "namespace": "com.company.data",
+  "fields": [
+    {"name": "transaction_id", "type": "string"},
+    {"name": "user_id", "type": "string"},
+    {"name": "amount", "type": "double"},
+    {"name": "currency", "type": "string"},
+    {"name": "merchant_name", "type": "string"},
+    {"name": "merchant_category", "type": ["null", "string"], "default": null},
+    {"name": "transaction_type", "type": "string"},
+    {"name": "timestamp", "type": "long", "logicalType": "timestamp-millis"},
+    {"name": "device_id", "type": ["null", "string"], "default": null},
+    {"name": "location", "type": ["null", "string"], "default": null},
+    {"name": "status", "type": "string"}
+  ]
+}

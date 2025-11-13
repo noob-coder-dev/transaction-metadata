@@ -1,0 +1,15 @@
+{
+  "type": "record",
+  "name": "User",
+  "namespace": "com.company.data",
+  "fields": [
+    {"name": "user_id", "type": "string"},
+    {"name": "name", "type": "string"},
+    {"name": "email", "type": "string"},
+    {"name": "age", "type": "int"},
+    {"name": "gender", "type": ["null", "string"], "default": null},
+    {"name": "location", "type": ["null", "string"], "default": null},
+    {"name": "last_transaction_time", "type": ["null", "long"], "default": null},
+    {"name": "total_transactions", "type": "int", "default": 0}
+  ]
+}
