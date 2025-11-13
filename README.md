@@ -5,12 +5,14 @@ for simulated transaction and user data used in streaming pipelines
 (Flink + Snowflake + Kafka).
 
 ### Structure
+```
 transaction_metadata/
 ├── schemas/
 │   ├── transaction/v1/transaction.avsc
 │   └── user/v1/user.avsc
 ├── loader.py
 └── version.py
+```
 
 ### Usage
 
