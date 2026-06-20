@@ -2,6 +2,12 @@
 
 `transaction-metadata` is a small Python package that exposes versioned Avro schemas for transaction and user data. It is useful for data pipelines and applications that need a reliable way to fetch schema definitions at runtime.
 
+## Latest Version
+
+Latest Version: `1.0.3`
+
+Please refer to: https://pypi.org/project/transaction-metadata/1.0.3/
+
 ## Installation
 
 Install from PyPI:
@@ -62,7 +68,6 @@ for field in schema.get("fields", []):
 The package is published on PyPI here:
 
 https://pypi.org/project/transaction-metadata/
-
 
 ## Notes
 
