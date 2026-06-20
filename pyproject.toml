@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "transaction-metadata"
-version = "0.1.0"
+version = "0.1.1"
 description = "A metadata package for transaction and user Avro schemas"
 authors = [{ name = "Manojit Roy", email = "roy.monojit982810@gmail.com" }]
 readme = "README.md"
