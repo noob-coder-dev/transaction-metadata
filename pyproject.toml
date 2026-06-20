@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "transaction-metadata"
-version = "1.0.0"
+dynamic = ["version"]
 description = "A metadata package for transaction and user Avro schemas"
 authors = [{ name = "Manojit Roy", email = "roy.monojit982810@gmail.com" }]
 readme = "README.md"
@@ -16,8 +16,11 @@ classifiers = [
     "Operating System :: OS Independent"
 ]
 
+[tool.setuptools.dynamic]
+version = { attr = "transaction_metadata.version.__version__" }
+
 [tool.setuptools.packages.find]
-where = ["transaction_metadata"]
+where = ["."]
 
 [tool.setuptools.package-data]
 "transaction_metadata" = ["schemas/**/*.avsc"]
